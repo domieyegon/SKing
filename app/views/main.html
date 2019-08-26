@@ -1,5 +1,13 @@
 <div class="jumbotron col-md-12">
 
+  <!-- <div class="col-md-12">
+    <form name="uploadForm" enctype="multipart/form-data" ng-submit="postVideo()">
+      <div class="form-group">
+          <input type="file" name="files" class="form-control" ng-model="formData.files">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </div> -->
 
   <div class="col-md-8">
     <video controls width="750"></video>
@@ -12,7 +20,7 @@
         <div class="panel" style="background-color: #eee;">
           <div id="playlist-div" ng-click="playVideo(video.id)" ng-model="video.id" class="panel-body">
             <p class="video-list">
-              <strong>{{video.name}}</strong>
+              <strong>{{video.videoName}}</strong>
             </p>
           </div>
         </div>
