@@ -49,16 +49,8 @@ angular.module('tryStreamApp')
       xhr.send();
     }
 
-    $scope.postVideo = postVideo;
+    // $scope.postVideo = postVideo;
     function postVideo() {
-
-      // $http({
-      //   method  : 'POST',
-      //   url     : 'http://localhost:8181/api/uploadImage',
-      //   data    : $scope.formData,
-      //   headers : { 'Content-Type': false }
-      //  });
-
       var Indata = { videoName: 'Music master', videoLength: '56:00', videoSize: 988765 };
       $http.post("http://localhost:8181/api/uploadImage", $scope.formData).then(function (data, status, headers, config) {
         console.log("saved successfully");
